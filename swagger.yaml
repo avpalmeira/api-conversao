@@ -4,9 +4,9 @@ info:
   version: "1.0.0"
   title: "Conversão de temperatura"
   contact:
-    email: "fabricio@veronez.dev"
+    email: "av.palmeira@gmail.com"
 paths:
-  /fahrenheit/{valor}/celsius:
+  /fahrenheit2celsius/{valor}:
     get:
       description: "Converte de Fahrenheit para Celsius"
       produces:
@@ -27,7 +27,7 @@ paths:
         "400":
           description: "Bad Input Parameter"
 
-  /celsius/{valor}/fahrenheit:
+  /celsius2fahrenheit/{valor}:
     get:
       description: "Converte de Celsius para Fahrenheit"
       produces:
@@ -44,8 +44,7 @@ paths:
           schema:
             type: "array"
             items:
-              $ref: "#/definitions/Temperatura
-              "
+              $ref: "#/definitions/Temperatura"
         "400":
           description: "Bad Input Parameter"
 
